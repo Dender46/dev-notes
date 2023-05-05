@@ -12,6 +12,8 @@ Download bazelisk - rename it to `bazel.exe` and put somewhere (`C:\dev\bazel`).
 
 ## MacOS Bootable Drive
 ### Error while making bootble drive: `Terminating app due to uncaught exception 'NSInternalInconsistencyException'`
+Sollution from [link](https://discussions.apple.com/thread/251386184)
+
 Run following command before making bootable drive:
 ```
 sudo plutil -replace CFBundleShortVersionString -string "12.6.03" /Applications/Install\ macOS\ Sierra.app/Contents/Info.plist
