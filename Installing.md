@@ -9,3 +9,11 @@ Install via Android Studio SDK manager.
 
 ## Bazel
 Download bazelisk - rename it to `bazel.exe` and put somewhere (`C:\dev\bazel`). Then add its path to %PATH%
+
+## MacOS Bootable Drive
+### Error while making bootble drive: `Terminating app due to uncaught exception 'NSInternalInconsistencyException'`
+Run following command before making bootable drive:
+```
+sudo plutil -replace CFBundleShortVersionString -string "12.6.03" /Applications/Install\ macOS\ Sierra.app/Contents/Info.plist
+```
+Continue with the process.
