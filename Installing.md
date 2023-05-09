@@ -29,16 +29,17 @@ sudo apt-get install gradle
 gradle -v
 adb start-server
 ```
+<sup>source: https://gist.github.com/jjvillavicencio/18feb09f0e93e017a861678bc638dcb0</sup>
 
 ## Bazel
 Download bazelisk - rename it to `bazel.exe` and put somewhere (`C:\dev\bazel`). Then add its path to %PATH%
 
 ## MacOS Bootable Drive
 ### Error while making bootble drive: `Terminating app due to uncaught exception 'NSInternalInconsistencyException'`
-Sollution from [link](https://discussions.apple.com/thread/251386184)
-
 Run following command before making bootable drive:
 ```
 sudo plutil -replace CFBundleShortVersionString -string "12.6.03" /Applications/Install\ macOS\ Sierra.app/Contents/Info.plist
 ```
 Continue with the process.
+
+<sup>source: https://discussions.apple.com/thread/251386184</sup>
