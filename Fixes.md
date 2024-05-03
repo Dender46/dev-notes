@@ -13,7 +13,11 @@ adb install -r -g file.apk
 ```
 
 ## Building C++ .exe with `cl` errors with `fatal error C1034: iostream: no include path set`
-Call this in the terminal
+Possible solution is to call this in the terminal, and then open VSCode from that terminal
 ```cmd
 cmd /c 'call "C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Auxiliary\Build\vcvars64.bat"'
 ```
+```cmd
+code .
+```
+or run `Developer Command Prompt` from Start menu and then launch VSCode
