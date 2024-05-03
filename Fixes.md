@@ -6,11 +6,15 @@
 
 <sup>source: https://forum.unity.com/threads/cant-change-resolution-for-standalone-build.323931/</sup>
 
+<br>
+
 ## Installing an APK file via `adb` doesn't show an app
 ```cmd
 adb shell pm uninstall com.company.appname
 adb install -r -g file.apk
 ```
+
+<br>
 
 ## Building C++ .exe with `cl` errors with `fatal error C1034: iostream: no include path set`
 Possible solution is to call this in the terminal, and then open VSCode from that terminal
