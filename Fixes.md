@@ -7,7 +7,13 @@
 <sup>source: https://forum.unity.com/threads/cant-change-resolution-for-standalone-build.323931/</sup>
 
 ## Installing an APK file via `adb` doesn't show an app
-```
+```cmd
 adb shell pm uninstall com.company.appname
 adb install -r -g file.apk
+```
+
+## Building C++ .exe with `cl` errors with `fatal error C1034: iostream: no include path set`
+Call this in the terminal
+```cmd
+cmd /c 'call "C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Auxiliary\Build\vcvars64.bat"'
 ```
