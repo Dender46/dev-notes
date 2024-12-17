@@ -25,3 +25,14 @@ cmd /c 'call "C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Auxi
 code .
 ```
 or run `Developer Command Prompt` from Start menu and then launch VSCode
+
+<br>
+
+## Fix previous commits with wrong author email and name
+```cmd
+git rebase -r <some_commit_before_all_of_your_bad_commits> --exec 'git commit --amend --no-edit --reset-author'
+```
+
+<sup>source: https://stackoverflow.com/questions/750172/how-do-i-change-the-author-and-committer-name-email-for-multiple-commits</sup>
+
+<br>
