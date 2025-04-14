@@ -29,8 +29,12 @@ or run `Developer Command Prompt` from Start menu and then launch VSCode
 <br>
 
 ## Fix previous commits with wrong author email and name
+If you want to also modify FIRST commit, use `--root`
+
+To avoid rewriting date of commit, use `--committer-date-is-author-date`
+
 ```cmd
-git rebase -r <some_commit_before_all_of_your_bad_commits> --exec 'git commit --amend --no-edit --reset-author'
+git rebase -r --committer-date-is-author-date <some_commit_before_all_of_your_bad_commits> --exec 'git commit --amend --no-edit --reset-author'
 ```
 
 <sup>source: https://stackoverflow.com/questions/750172/how-do-i-change-the-author-and-committer-name-email-for-multiple-commits</sup>
